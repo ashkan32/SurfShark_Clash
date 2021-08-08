@@ -14,7 +14,6 @@ dns:
   fallback:
     - 1.1.1.1
     - 8.8.8.8
-
 proxies:
   - {name: Netherlands 🇳🇱 1 , server: 89.46.223.86, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
   - {name: Netherlands 🇳🇱 2 , server: 143.244.42.96, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
@@ -82,7 +81,6 @@ proxy-groups:
   - name: 🔥 Auto
     type: url-test
     proxies:
-
       - Netherlands 🇳🇱 1
       - Netherlands 🇳🇱 2
       - Netherlands 🇳🇱 3
@@ -146,7 +144,7 @@ proxy-groups:
       - Netherlands 🇳🇱 61
 
     url: http://www.gstatic.com/generate_204'
-    interval: 900
+    interval: 300
 
   - name: 🔰 Select
     type: select
