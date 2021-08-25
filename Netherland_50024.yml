@@ -216,7 +216,7 @@ proxy-groups:
       - Netherlands 🇳🇱 61
       - Netherlands 🇳🇱 62
    
-   - name: ✅ Direct
+  - name: ✅ Direct
     type: select
     proxies:
       - DIRECT
