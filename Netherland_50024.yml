@@ -1,0 +1,236 @@
+mixed-port: 7890
+allow-lan: false
+mode: Global
+log-level: silent
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - 1.1.1.1
+    - 8.8.8.8
+  fallback:
+    - 1.1.1.1
+    - 8.8.8.8
+proxies:
+  - {name: Netherlands 🇳🇱 1, server: 89.46.223.86, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 2, server: 143.244.42.96, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 3, server: 81.19.209.98, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 4, server: 81.19.209.120, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 5, server: 81.19.208.80, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 6, server: 212.102.35.199, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 7, server: 212.102.35.201, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 8, server: 212.102.35.216, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 9, server: 89.46.223.167, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 10, server: 81.19.209.59, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 11, server: 212.102.35.204, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 12, server: 212.102.35.206, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 13, server: 89.46.223.227, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 14, server: 81.19.208.102, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 15, server: 89.46.223.189, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 16, server: 81.19.209.57, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 17, server: 143.244.42.94, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 18, server: 89.46.223.241, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 19, server: 89.46.223.190, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 20, server: 89.46.223.192, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 21, server: 81.19.208.54, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 22, server: 81.19.208.66, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 23, server: 89.46.223.239, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 24, server: 143.244.42.91, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 25, server: 81.19.209.20, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 26, server: 212.102.35.211, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 27, server: 89.187.174.229, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 28, server: 89.46.223.80, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 29, server: 143.244.42.69, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 30, server: 89.46.223.88, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 31, server: 81.19.208.124, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 32, server: 89.46.223.219, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 33, server: 89.46.223.237, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 34, server: 89.46.223.212, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 35, server: 89.46.223.82, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 36, server: 89.46.223.72, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 37, server: 185.59.222.92, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 38, server: 143.244.42.96, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 39, server: 81.19.208.56, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 40, server: 89.46.223.104, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 41, server: 89.46.223.84, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 42, server: 212.102.35.209, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 43, server: 89.46.223.62, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 44, server: 143.244.42.66, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 45, server: 143.244.42.74, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 46, server: 143.244.42.76, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 47, server: 81.19.208.78, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 48, server: 89.46.223.54, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 49, server: 81.19.208.91, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 50, server: 81.19.209.124, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 51, server: 81.19.208.117, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 52, server: 178.239.173.41, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 53, server: 178.239.173.43, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 54, server: 143.244.42.89, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 55, server: 143.244.42.71, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 56, server: 81.19.208.122, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 57, server: 81.19.209.113, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 58, server: 212.102.35.214, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 59, server: 81.19.209.100, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 60, server: 109.236.86.62, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 61, server: 195.181.172.37, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+  - {name: Netherlands 🇳🇱 62, server: 185.59.222.94, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B, udp: true}
+
+proxy-groups:
+  - name: 🔥 Auto
+    type: url-test
+    proxies:
+      - Netherlands 🇳🇱 1
+      - Netherlands 🇳🇱 2
+      - Netherlands 🇳🇱 3
+      - Netherlands 🇳🇱 4
+      - Netherlands 🇳🇱 5
+      - Netherlands 🇳🇱 6
+      - Netherlands 🇳🇱 7
+      - Netherlands 🇳🇱 8
+      - Netherlands 🇳🇱 9
+      - Netherlands 🇳🇱 10
+      - Netherlands 🇳🇱 11
+      - Netherlands 🇳🇱 12
+      - Netherlands 🇳🇱 13
+      - Netherlands 🇳🇱 14
+      - Netherlands 🇳🇱 15
+      - Netherlands 🇳🇱 16
+      - Netherlands 🇳🇱 17
+      - Netherlands 🇳🇱 18
+      - Netherlands 🇳🇱 19
+      - Netherlands 🇳🇱 20
+      - Netherlands 🇳🇱 21
+      - Netherlands 🇳🇱 22
+      - Netherlands 🇳🇱 23
+      - Netherlands 🇳🇱 24
+      - Netherlands 🇳🇱 25
+      - Netherlands 🇳🇱 26
+      - Netherlands 🇳🇱 27
+      - Netherlands 🇳🇱 28
+      - Netherlands 🇳🇱 29
+      - Netherlands 🇳🇱 30
+      - Netherlands 🇳🇱 31
+      - Netherlands 🇳🇱 32
+      - Netherlands 🇳🇱 33
+      - Netherlands 🇳🇱 34
+      - Netherlands 🇳🇱 35
+      - Netherlands 🇳🇱 36
+      - Netherlands 🇳🇱 37
+      - Netherlands 🇳🇱 38
+      - Netherlands 🇳🇱 39
+      - Netherlands 🇳🇱 40
+      - Netherlands 🇳🇱 41
+      - Netherlands 🇳🇱 42
+      - Netherlands 🇳🇱 43
+      - Netherlands 🇳🇱 44
+      - Netherlands 🇳🇱 45
+      - Netherlands 🇳🇱 46
+      - Netherlands 🇳🇱 47
+      - Netherlands 🇳🇱 48
+      - Netherlands 🇳🇱 49
+      - Netherlands 🇳🇱 50
+      - Netherlands 🇳🇱 51
+      - Netherlands 🇳🇱 52
+      - Netherlands 🇳🇱 53
+      - Netherlands 🇳🇱 54
+      - Netherlands 🇳🇱 55
+      - Netherlands 🇳🇱 56
+      - Netherlands 🇳🇱 57
+      - Netherlands 🇳🇱 58
+      - Netherlands 🇳🇱 59
+      - Netherlands 🇳🇱 60
+      - Netherlands 🇳🇱 61
+      - Netherlands 🇳🇱 62
+      
+    url: http://www.gstatic.com/generate_204'
+    interval: 300
+
+  - name: 🔰 Select
+    type: select
+    proxies:
+      - 🔥 Auto
+      - ✅ Direct
+      - Netherlands 🇳🇱 1
+      - Netherlands 🇳🇱 2
+      - Netherlands 🇳🇱 3
+      - Netherlands 🇳🇱 4
+      - Netherlands 🇳🇱 5
+      - Netherlands 🇳🇱 6
+      - Netherlands 🇳🇱 7
+      - Netherlands 🇳🇱 8
+      - Netherlands 🇳🇱 9
+      - Netherlands 🇳🇱 10
+      - Netherlands 🇳🇱 11
+      - Netherlands 🇳🇱 12
+      - Netherlands 🇳🇱 13
+      - Netherlands 🇳🇱 14
+      - Netherlands 🇳🇱 15
+      - Netherlands 🇳🇱 16
+      - Netherlands 🇳🇱 17
+      - Netherlands 🇳🇱 18
+      - Netherlands 🇳🇱 19
+      - Netherlands 🇳🇱 20
+      - Netherlands 🇳🇱 21
+      - Netherlands 🇳🇱 22
+      - Netherlands 🇳🇱 23
+      - Netherlands 🇳🇱 24
+      - Netherlands 🇳🇱 25
+      - Netherlands 🇳🇱 26
+      - Netherlands 🇳🇱 27
+      - Netherlands 🇳🇱 28
+      - Netherlands 🇳🇱 29
+      - Netherlands 🇳🇱 30
+      - Netherlands 🇳🇱 31
+      - Netherlands 🇳🇱 32
+      - Netherlands 🇳🇱 33
+      - Netherlands 🇳🇱 34
+      - Netherlands 🇳🇱 35
+      - Netherlands 🇳🇱 36
+      - Netherlands 🇳🇱 37
+      - Netherlands 🇳🇱 38
+      - Netherlands 🇳🇱 39
+      - Netherlands 🇳🇱 40
+      - Netherlands 🇳🇱 41
+      - Netherlands 🇳🇱 42
+      - Netherlands 🇳🇱 43
+      - Netherlands 🇳🇱 44
+      - Netherlands 🇳🇱 45
+      - Netherlands 🇳🇱 46
+      - Netherlands 🇳🇱 47
+      - Netherlands 🇳🇱 48
+      - Netherlands 🇳🇱 49
+      - Netherlands 🇳🇱 50
+      - Netherlands 🇳🇱 51
+      - Netherlands 🇳🇱 52
+      - Netherlands 🇳🇱 53
+      - Netherlands 🇳🇱 54
+      - Netherlands 🇳🇱 55
+      - Netherlands 🇳🇱 56
+      - Netherlands 🇳🇱 57
+      - Netherlands 🇳🇱 58
+      - Netherlands 🇳🇱 59
+      - Netherlands 🇳🇱 60
+      - Netherlands 🇳🇱 61
+      - Netherlands 🇳🇱 62
+   
+   - name: ✅ Direct
+    type: select
+    proxies:
+      - DIRECT
+
+  - name: 🚫 Intercept
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+
+rules:
+
+  - DOMAIN-SUFFIX,ad.com,🚫 Intercept
+  - SRC-IP-CIDR,192.168.1.201/32,✅ Direct
+  - IP-CIDR,127.0.0.0/8,✅ Direct
+  - GEOIP,IR,✅ Direct
+  - MATCH,,🔰 Select,dns-failed
