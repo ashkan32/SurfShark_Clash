@@ -1,0 +1,74 @@
+mixed-port: 7890
+allow-lan: false
+mode: Global
+log-level: silent
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - 1.1.1.1
+    - 8.8.8.8
+  fallback:
+    - 1.1.1.1
+    - 8.8.8.8
+proxies:
+  - {name: Costa Rica 🇨🇷1, server: 176.227.241.31, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy, udp: true}
+  - {name: Costa Rica 🇨🇷2, server: 176.227.241.33, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy, udp: true}
+  - {name: Costa Rica 🇨🇷3, server: 176.227.241.35, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy, udp: true}
+  - {name: Costa Rica 🇨🇷4, server: 176.227.241.21, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy, udp: true}
+  - {name: Costa Rica 🇨🇷5, server: 176.227.241.26, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy, udp: true}
+  - {name: Costa Rica 🇨🇷6, server: 176.227.241.29, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy, udp: true}
+  - {name: Costa Rica 🇨🇷7, server: 176.227.241.24, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy, udp: true}
+  - {name: Costa Rica 🇨🇷8, server: 176.227.241.19, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy, udp: true}
+
+proxy-groups:
+  - name: 🔥 Auto
+    type: url-test
+    proxies:
+      - Costa Rica 🇨🇷1
+      - Costa Rica 🇨🇷2
+      - Costa Rica 🇨🇷3
+      - Costa Rica 🇨🇷4
+      - Costa Rica 🇨🇷5
+      - Costa Rica 🇨🇷6
+      - Costa Rica 🇨🇷7
+      - Costa Rica 🇨🇷8
+
+    url: http://www.gstatic.com/generate_204'
+    interval: 300
+
+  - name: 🔰 Select
+    type: select
+    proxies:
+      - 🔥 Auto
+      - ✅ Direct
+      - Costa Rica 🇨🇷1
+      - Costa Rica 🇨🇷2
+      - Costa Rica 🇨🇷3
+      - Costa Rica 🇨🇷4
+      - Costa Rica 🇨🇷5
+      - Costa Rica 🇨🇷6
+      - Costa Rica 🇨🇷7
+      - Costa Rica 🇨🇷8
+
+  - name: ✅ Direct
+    type: select
+    proxies:
+      - DIRECT
+
+  - name: 🚫 Intercept
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+
+rules:
+
+  - DOMAIN-SUFFIX,ad.com,🚫 Intercept
+  - SRC-IP-CIDR,192.168.1.201/32,✅ Direct
+  - IP-CIDR,127.0.0.0/8,✅ Direct
+  - GEOIP,IR,✅ Direct
+  - MATCH,,🔰 Select,dns-failed
